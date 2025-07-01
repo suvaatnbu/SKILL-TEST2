@@ -16,7 +16,10 @@ spec:
     spec:
       containers:
         - name: user
-          image: <your-dockerhub-username>/user-service:latest
+          image: suvaatnbu/user-service:latest
+          image: user-service:latest
+          imagePullPolicy: Never
+
           ports:
             - containerPort: 3000
           env:
